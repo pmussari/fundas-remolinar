@@ -76,3 +76,11 @@ Cada producto tiene un botón "Comprar producto" que abre WhatsApp (`wa.me/+5411
 ## Deploy
 
 Build estático — se puede deployar en GitHub Pages, Netlify, Vercel, o cualquier CDN.
+
+## Publicación
+
+El sitio se publica en https://pmussari.github.io/fundas-remolinar/ con GitHub Pages.
+Cada push a `main` ejecuta `.github/workflows/deploy.yml` (lint, build y deploy de `dist/`).
+
+Requisito único: en GitHub → Settings → Pages, el origen (Source) debe ser **GitHub Actions**.
+El `base` de `vite.config.ts` (`/fundas-remolinar/`) tiene que coincidir con el nombre del repositorio.
