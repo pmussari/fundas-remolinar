@@ -1,244 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="dark" lang="es">
-<head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta name="description" content="Fundas Remolinar — Fundas protectoras de calidad para platillos de batería"/>
-  <title>Fundas Remolinar</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "surface": "#131313",
-            "surface-container-lowest": "#0e0e0e",
-            "surface-variant": "#353534",
-            "on-surface": "#e5e2e1",
-            "surface-container-low": "#1c1b1b",
-            "on-primary": "#3c2f00",
-            "primary-container": "#d4af37",
-            "surface-dim": "#131313",
-            "inverse-surface": "#e5e2e1",
-            "secondary": "#c6c6c7",
-            "surface-tint": "#e9c349",
-            "surface-container-highest": "#353534",
-            "inverse-on-surface": "#313030",
-            "surface-container": "#201f1f",
-            "on-secondary": "#2f3131",
-            "background": "#131313",
-            "inverse-primary": "#735c00",
-            "outline": "#99907c",
-            "on-background": "#e5e2e1",
-            "outline-variant": "#4d4635",
-            "surface-container-high": "#2a2a2a",
-            "primary-fixed-dim": "#e9c349",
-            "secondary-container": "#454747",
-            "primary": "#f2ca50",
-            "on-surface-variant": "#d0c5af",
-            "surface-bright": "#3a3939",
-            "primary-fixed": "#ffe088",
-          },
-          fontFamily: {
-            "headline": ["Manrope"],
-            "body": ["Manrope"],
-            "label": ["Inter"],
-          },
-          borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
-        },
-      },
-    }
-  </script>
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-    }
-    body {
-      background-color: #131313;
-      color: #e5e2e1;
-      font-family: 'Manrope', sans-serif;
-      overflow-x: hidden;
-    }
-    .text-gold-gradient {
-      background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .bg-gold-gradient {
-      background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
-    }
-    .carousel-container { position: relative; overflow: hidden; }
-    .carousel-slides { display: flex; height: 100%; transition: transform 0.5s ease; }
-    .carousel-slide { flex: 0 0 100%; }
-    .carousel-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  </style>
-</head>
-<body class="bg-surface text-on-surface">
-
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full flex justify-between items-center px-8 md:px-12 py-6 bg-[#131313]/60 backdrop-blur-xl z-50">
-    <div class="text-xl font-black tracking-tighter text-[#f2ca50] font-headline">FUNDAS REMOLINAR</div>
-    <div class="hidden md:flex items-center gap-10">
-      <a class="font-headline tracking-[-0.02em] font-bold uppercase text-[#f2ca50] text-sm" href="#">Colecciones</a>
-      <a class="font-headline tracking-[-0.02em] font-bold uppercase text-white/70 hover:text-[#f2ca50] text-sm transition-colors duration-300" href="#productos">Productos</a>
-      <a class="font-headline tracking-[-0.02em] font-bold uppercase text-white/70 hover:text-[#f2ca50] text-sm transition-colors duration-300" href="#">Contacto</a>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[#0e0e0e]">
-    <div class="absolute inset-0 opacity-50">
-      <img class="w-full h-full object-cover" src="https://http2.mlstatic.com/D_NQ_NP_646743-MLA108664217089_032026-O.webp" alt="Funda protectora para platillos de batería"/>
-    </div>
-    <div class="relative z-10 text-center px-6">
-      <p class="font-label text-xs tracking-[0.4em] uppercase text-white/50 mb-6">Artesanía Argentina</p>
-      <h1 class="font-headline text-5xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-none">
-        PROTEGE TUS <br/><span class="text-gold-gradient">PLATILLOS</span>
-      </h1>
-      <a href="#productos" class="inline-block bg-gold-gradient text-on-primary px-12 py-5 font-headline font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform duration-300">
-        Ver Colección
-      </a>
-    </div>
-    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
-      <span class="text-[10px] tracking-[0.4em] uppercase font-label">Explorar</span>
-      <div class="w-px h-16 bg-outline"></div>
-    </div>
-  </header>
-
-  <!-- Products -->
-  <section id="productos" class="py-32 px-8 md:px-12 bg-surface">
-    <div class="max-w-7xl mx-auto space-y-40">
-
-      <!-- Product 1 -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-        <div class="md:col-span-7">
-          <div class="aspect-[4/5] bg-surface-container-low carousel-container" id="c1">
-            <div class="carousel-slides">
-              <div class="carousel-slide"><img src="https://http2.mlstatic.com/D_NQ_NP_646743-MLA108664217089_032026-O.webp" alt="Funda De Autor Yellow — vista frontal"/></div>
-              <div class="carousel-slide"><img src="https://http2.mlstatic.com/D_NQ_NP_776040-MLA107907203562_032026-O.webp" alt="Funda De Autor Yellow — vista lateral"/></div>
-              <div class="carousel-slide"><img src="https://http2.mlstatic.com/D_NQ_NP_850511-MLA107907262236_032026-O.webp" alt="Funda De Autor Yellow — detalle"/></div>
-            </div>
-            <button onclick="prevSlide('c1',3)" class="absolute left-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors z-10">
-              <span class="material-symbols-outlined">chevron_left</span>
-            </button>
-            <button onclick="nextSlide('c1',3)" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors z-10">
-              <span class="material-symbols-outlined">chevron_right</span>
-            </button>
-          </div>
-          <div class="w-full h-0.5 flex" id="c1-bar">
-            <div class="bg-primary h-full transition-all duration-300" style="width:33.33%"></div>
-            <div class="bg-surface-container-highest h-full flex-1"></div>
-          </div>
-        </div>
-        <div class="md:col-span-5 md:pl-12 flex flex-col items-start">
-          <span class="text-primary font-label text-xs tracking-widest uppercase mb-4">Ecocuero Premium</span>
-          <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-8">FUNDA DE<br/>AUTOR YELLOW</h2>
-          <p class="font-body text-secondary mb-10 max-w-sm leading-relaxed opacity-70">
-            Ecocuero de alta calidad, amarillo y negro. Para platillos de hasta 22". Incluye separador removible.
-          </p>
-          <a href="https://wa.me/+541136194442" target="_blank" rel="noopener" class="border border-outline px-10 py-4 font-headline font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-surface transition-all duration-300">
-            Comprar producto
-          </a>
-        </div>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-        <div class="md:col-span-5 md:order-1 order-2 flex flex-col items-end text-right">
-          <span class="text-primary font-label text-xs tracking-widest uppercase mb-4">Acolchado Extra</span>
-          <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-8">FUNDA<br/>PREMIUM</h2>
-          <p class="font-body text-secondary mb-10 max-w-sm leading-relaxed opacity-70">
-            Interior acolchado extra y bolsillos laterales. Para platillos de hasta 24".
-          </p>
-          <a href="https://wa.me/+541136194442" target="_blank" rel="noopener" class="border border-outline px-10 py-4 font-headline font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-surface transition-all duration-300">
-            Comprar producto
-          </a>
-        </div>
-        <div class="md:col-span-7 md:order-2 order-1">
-          <div class="aspect-[16/10] bg-surface-container-low carousel-container" id="c2">
-            <div class="carousel-slides">
-              <div class="carousel-slide"><img src="https://placehold.co/800x500/1c1b1b/f2ca50?text=Funda+Premium" alt="Funda Premium — vista frontal"/></div>
-              <div class="carousel-slide"><img src="https://placehold.co/800x500/201f1f/f2ca50?text=Interior+Acolchado" alt="Funda Premium — interior"/></div>
-              <div class="carousel-slide"><img src="https://placehold.co/800x500/2a2a2a/f2ca50?text=Vista+Lateral" alt="Funda Premium — lateral"/></div>
-            </div>
-            <button onclick="prevSlide('c2',3)" class="absolute left-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors z-10">
-              <span class="material-symbols-outlined">chevron_left</span>
-            </button>
-            <button onclick="nextSlide('c2',3)" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors z-10">
-              <span class="material-symbols-outlined">chevron_right</span>
-            </button>
-          </div>
-          <div class="w-full h-0.5 flex" id="c2-bar">
-            <div class="bg-primary h-full transition-all duration-300" style="width:33.33%"></div>
-            <div class="bg-surface-container-highest h-full flex-1"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-        <div class="md:col-span-7">
-          <div class="aspect-[4/3] bg-surface-container-low carousel-container" id="c3">
-            <div class="carousel-slides">
-              <div class="carousel-slide"><img src="https://placehold.co/800x600/1c1b1b/f2ca50?text=Funda+Compacta" alt="Funda Compacta — vista frontal"/></div>
-              <div class="carousel-slide"><img src="https://placehold.co/800x600/201f1f/f2ca50?text=Correa+Ajustable" alt="Funda Compacta — correa"/></div>
-            </div>
-            <button onclick="prevSlide('c3',2)" class="absolute left-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors z-10">
-              <span class="material-symbols-outlined">chevron_left</span>
-            </button>
-            <button onclick="nextSlide('c3',2)" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors z-10">
-              <span class="material-symbols-outlined">chevron_right</span>
-            </button>
-          </div>
-          <div class="w-full h-0.5 flex" id="c3-bar">
-            <div class="bg-primary h-full transition-all duration-300" style="width:50%"></div>
-            <div class="bg-surface-container-highest h-full flex-1"></div>
-          </div>
-        </div>
-        <div class="md:col-span-5 md:pl-12 flex flex-col items-start">
-          <span class="text-primary font-label text-xs tracking-widest uppercase mb-4">Diseño Ligero</span>
-          <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-8">FUNDA<br/>COMPACTA</h2>
-          <p class="font-body text-secondary mb-10 max-w-sm leading-relaxed opacity-70">
-            Diseño ligero con correa ajustable. Ideal para hi-hats y platillos pequeños.
-          </p>
-          <a href="https://wa.me/+541136194442" target="_blank" rel="noopener" class="border border-outline px-10 py-4 font-headline font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-surface transition-all duration-300">
-            Comprar producto
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="w-full flex flex-col items-center gap-8 px-12 bg-[#0e0e0e] py-16">
-    <div class="text-[#f2ca50] font-bold text-xl tracking-tighter font-headline">FUNDAS REMOLINAR</div>
-    <div class="flex flex-wrap justify-center gap-8">
-      <a class="font-headline text-[10px] tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Colecciones</a>
-      <a class="font-headline text-[10px] tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Sobre Nosotros</a>
-      <a class="font-headline text-[10px] tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Contacto</a>
-      <a class="font-headline text-[10px] tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Privacidad</a>
-    </div>
-    <div class="mt-8 opacity-20 text-[8px] tracking-[0.5em] font-label uppercase">
-      &copy; 2026 Fundas Remolinar. Todos los derechos reservados.
-    </div>
-  </footer>
-
-  <script>
-    const _state = {};
-    function _s(id) { if (!_state[id]) _state[id] = 0; return _state[id]; }
-    function updateCarousel(id, total) {
-      const cur = _state[id];
-      document.querySelector(`#${id} .carousel-slides`).style.transform = `translateX(-${cur * 100}%)`;
-      const bar = document.getElementById(id + '-bar');
-      if (bar) bar.children[0].style.width = ((cur + 1) / total * 100).toFixed(2) + '%';
-    }
-    function nextSlide(id, total) { _state[id] = (_s(id) + 1) % total; updateCarousel(id, total); }
-    function prevSlide(id, total) { _state[id] = (_s(id) - 1 + total) % total; updateCarousel(id, total); }
-  </script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fundas Remolinar — Fundas protectoras de calidad para platillos de batería" />
+    <title>Fundas Remolinar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MPGXC2JP');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPGXC2JP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "funda-verde",
+    "name": "Funda Verde",
+    "categoryLabel": "Verde / Negro",
+    "description": "Cuerpo negro con panel y separador en verde. Correa mochila a rayas rojo y verde. Para platillos de hasta 22\".",
+    "imageAspect": "3/4",
+    "images": [
+      {
+        "src": "static/cut/4413.jpg",
+        "alt": "Funda Verde — vista frontal"
+      },
+      {
+        "src": "static/cut/4415.jpg",
+        "alt": "Funda Verde — vista lateral"
+      },
+      {
+        "src": "static/cut/4414.jpg",
+        "alt": "Funda Verde — correa trasera"
+      }
+    ]
+  },
+  {
+    "id": "funda-roja",
+    "name": "Funda Roja",
+    "categoryLabel": "Rojo / Negro",
+    "description": "Cuerpo negro con panel y separador en rojo. Correa mochila roja regulable. Para platillos de hasta 22\".",
+    "imageAspect": "3/4",
+    "images": [
+      {
+        "src": "static/cut/4416.jpg",
+        "alt": "Funda Roja — vista frontal"
+      },
+      {
+        "src": "static/cut/4418.jpg",
+        "alt": "Funda Roja — correa trasera"
+      }
+    ]
+  },
+  {
+    "id": "funda-amarilla-fluo",
+    "name": "Funda Amarilla Fluo",
+    "categoryLabel": "Amarillo Fluo / Negro",
+    "description": "Cuerpo negro con panel y separador en amarillo fluo. Correa mochila a juego. Alto contraste y fácil identificación. Para platillos de hasta 22\".",
+    "imageAspect": "3/4",
+    "images": [
+      {
+        "src": "static/cut/4432.jpg",
+        "alt": "Funda Amarilla Fluo — vista frontal"
+      },
+      {
+        "src": "static/cut/4433.jpg",
+        "alt": "Funda Amarilla Fluo — vista tres cuartos"
+      },
+      {
+        "src": "static/cut/4431.jpg",
+        "alt": "Funda Amarilla Fluo — correa trasera"
+      }
+    ]
+  },
+  {
+    "id": "funda-azul-verde-salvia",
+    "name": "Funda Azul / Verde Salvia",
+    "categoryLabel": "Azul / Verde Salvia",
+    "description": "Cuerpo azul con panel y separador en verde salvia. Correa mochila verde salvia. Combinación suave y elegante. Para platillos de hasta 22\".",
+    "imageAspect": "3/4",
+    "images": [
+      {
+        "src": "static/cut/3536.jpg",
+        "alt": "Funda Azul/Verde Salvia — vista frontal"
+      },
+      {
+        "src": "static/cut/3537.jpg",
+        "alt": "Funda Azul/Verde Salvia — vista lateral"
+      },
+      {
+        "src": "static/cut/3539.jpg",
+        "alt": "Funda Azul/Verde Salvia — correa trasera"
+      }
+    ]
+  },
+  {
+    "id": "funda-azul-marino",
+    "name": "Funda Azul Marino",
+    "categoryLabel": "Azul Marino / Negro",
+    "description": "Cuerpo azul marino con panel a tono y correa mochila azul. Diseño clásico y discreto. Para platillos de hasta 22\".",
+    "imageAspect": "3/4",
+    "images": [
+      {
+        "src": "static/cut/3557.jpg",
+        "alt": "Funda Azul Marino — vista frontal"
+      },
+      {
+        "src": "static/cut/3558.jpg",
+        "alt": "Funda Azul Marino — vista lateral"
+      },
+      {
+        "src": "static/cut/3559.jpg",
+        "alt": "Funda Azul Marino — correa trasera"
+      }
+    ]
+  },
+  {
+    "id": "funda-autor-yellow",
+    "name": "Funda De Autor Yellow",
+    "categoryLabel": "Ecocuero Premium",
+    "description": "Ecocuero de alta calidad, amarillo y negro. Para platillos de hasta 22\". Incluye separador removible.",
+    "imageAspect": "3/4",
+    "images": [
+      {
+        "src": "static/cut/3541.jpg",
+        "alt": "Funda De Autor Yellow — vista frontal"
+      }
+    ]
+  },
+  {
+    "id": "funda-roja-gris",
+    "name": "Funda Roja / Gris",
+    "categoryLabel": "Rojo / Gris",
+    "description": "Cuerpo gris con panel y separador en rojo. Correa mochila roja. Construcción ligera y resistente. Para platillos de hasta 22\".",
+    "imageAspect": "3/4",
+    "images": [
+      {
+        "src": "static/cut/3553.jpg",
+        "alt": "Funda Roja/Gris — vista frontal"
+      },
+      {
+        "src": "static/cut/3554.jpg",
+        "alt": "Funda Roja/Gris — vista lateral"
+      },
+      {
+        "src": "static/cut/3555.jpg",
+        "alt": "Funda Roja/Gris — correa trasera"
+      }
+    ]
+  }
+]
