@@ -35,6 +35,10 @@ fundas-remolinar/
 └── index.html.bak              # HTML estático original (referencia)
 ```
 
+## Deploy
+
+Ver [docs/deploy-vercel.md](docs/deploy-vercel.md) (ruta base configurable y Vercel Analytics).
+
 ## Agregar o editar productos
 
 Editar `src/data/products.json`. Cada producto tiene:

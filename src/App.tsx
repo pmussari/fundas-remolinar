@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import productsData from "./data/products.json";
 import type { Product } from "./types/product";
 import Navbar from "./components/Navbar";
@@ -20,6 +21,7 @@ export default function App() {
       <Specs />
       <Contact />
       <Footer />
+      <Analytics />
     </>
   );
 }
